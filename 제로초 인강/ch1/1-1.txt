@@ -1,0 +1,10 @@
+1-1강
+
+html 하이퍼 텍스트 마크업 랭귀지
+css Cascading style sheets
+-- 웹 어플리케이션 > 웹 문서
+
+Javascript 웹의 동작 -> 웹의 모든 것
+
+// Css을 없앤 것, document의 head을 없애서??
+document.head.parentNode.removeChild(document.head);
