@@ -26,6 +26,9 @@ h6 {
   display: inline-block;
 }
 
+.float-left{
+  float: left;
+}
 /* selector */
 .blind {
   position: absolute;
@@ -313,12 +316,13 @@ main {
 
 #main-centered {
   padding: 8px 10px;
-  width: 1108px;
+  width: 1130px;
 }
 
 #main-first-block {
   display: inline-block;
   width: 100%;
+  vertical-align: top;
 }
 
 #main-ad {
@@ -332,18 +336,24 @@ main {
 
 #main-login {
   float: left;
-  width: 332px;
+  width: 350px;
   height: 120px;
   vertical-align: top;
   background-color: white;
   margin-bottom: 8px;
 }
 
-#main-second-block .inline-block:first-child {
-  width: 740px;
+#main-second-block{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 8px;
 }
-#main-second-block .inline-block:last-child {
-  width: 332px;
+#main-second-block .float-left:first-child {
+  width: 740px;
+  margin-right: 8px;
+}
+#main-second-block .float-left:last-child {
+  width: 350px;
   vertical-align: top;
 }
 
@@ -360,6 +370,7 @@ main {
 #main-ytn ol {
   display: inline-block;
 }
+
 #main-newsstand {
   display: inline-block;
   width: 740px;
@@ -367,6 +378,7 @@ main {
   background-color: white;
   margin-right: 8px;
   margin-bottom: 8px;
+  vertical-align: top;
 }
 
 #main-newsstand h3 {
@@ -383,7 +395,7 @@ main {
 
 #main-newsstand li {
   float: left;
-  width: 123px;
+  width: calc(100% / 6);
   height: 67px;
   border-right: 1px solid #f1f3f6;
   border-bottom: 1px solid #f1f3f6;
@@ -398,24 +410,25 @@ main {
 
 #main-weather {
   display: inline-block;
-  width: 332px;
+  width: 350px;
   height: 142px;
   background-color: white;
   margin-bottom: 8px;
+  vertical-align: top;
 }
 
 #main-second-ad {
   display: inline-block;
-  width: 332px;
+  width: 350px;
   height: 150px;
   background-color: #555;
-  margin-bottom: 8px;
+  vertical-align: top;
 }
 
 #main-category {
   float: left;
   width: 740px;
-  height: 837px;
+  height: 882px;
   background: white;
   margin-right: 8px;
   margin-bottom: 8px;
@@ -423,10 +436,15 @@ main {
 
 #main-shopping {
   float: left;
-  width: 332px;
-  height: 837px;
+  width: 350px;
+  height: 882px;
   background: white;
   margin-bottom: 8px;
+}
+
+#main-shopping iframe{
+  width: 100%;
+  height: 100%;
 }
 #main-third-block,
 #main-fourth-blcok {
@@ -445,7 +463,7 @@ main {
 
 #main-third-ad {
   float: left;
-  width: 332px;
+  width: 350px;
   height: 130px;
   background: #555;
 }
