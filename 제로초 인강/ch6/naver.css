@@ -215,52 +215,57 @@ nav li:nth-child(6) span:first-child {
 
 nav li:nth-child(7) span:first-child {
   width: 32px;
-  background-position: -125px -130px;
+  background-position: -125px -131px;
 }
 
 nav li:nth-child(8) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -279px -208px;
 }
 
 nav li:nth-child(9) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -128px -104px;
 }
 
 nav li:nth-child(10) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -36px -260px;
 }
 
 nav li:nth-child(11) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 40px;
+  background-position: -151px -156px;
 }
 
 nav li:nth-child(12) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -279px -130px;
 }
 
 nav li:nth-child(13) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -234px -233.5px;
 }
 
 nav li:nth-child(14) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -72px -259px;
 }
 
 nav li:nth-child(15) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 14px;
+  background-position: -140px -78px;
 }
 
 nav li:nth-child(16) span:first-child {
-  width: 32px;
-  background-position: -125px -130px;
+  width: 28px;
+  background-position: -278px -0.5px;
+}
+
+nav ul:nth-of-type(2) li:first-child span:first-child {
+  width: 56px;
+  background-position: 0px -105px;
 }
 
 .nav-divider {
@@ -273,21 +278,23 @@ nav li:nth-child(16) span:first-child {
 
 #search-ranking {
   position: absolute;
-  top: 13px;
+  top: 9px;
   right: 0;
 }
 
 #rank-number {
   margin-top: -9px;
   color: #00ab33;
-  font-size: 16px;
+  font-size: 19px;
+}
+
+#rank-title {
+  letter-spacing: -1px;
+  font-size: 14px;
 }
 
 main {
   background-color: #f2f4f7;
-  overflow: auto;
-}
-
-main h3:nth-of-type(2) {
-  background-color: red;
+  /* display: inline-block;
+  width: 100%; */
 }
