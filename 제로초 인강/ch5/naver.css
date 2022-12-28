@@ -11,7 +11,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Dotum, '돋움', Helvetica,"Apple SD Gothic Neo",sans-serif;
+  /* font-family: Dotum, '돋움', Helvetica,"Apple SD Gothic Neo",sans-serif; */
 }
 
 /* selector */
@@ -98,6 +98,7 @@ header {
   vertical-align: top;
   width: 444px;
   height: 24px;
+  margin-right: 10px;
 }
 
 #header-search fieldset button {
@@ -109,6 +110,36 @@ header {
   position: absolute;
   right: -2px;
   top: -2px;
+}
+
+#search-keyboard{
+  background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+  background-repeat: no-repeat;
+  background-position: -398px -267px;
+  background-size: 442px 428px;
+  width: 20px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+  margin: 8px 0 0 -10px;
+  position: relative;
+  right: -16px;
+}
+
+#search-history{
+  background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+  background-repeat: no-repeat;
+  background-position: -158px -151px;
+  background-size: 442px 428px;
+  width: 10px;
+  height: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+  margin: 8px 0 0 11px;
+  position: relative;
+  right: -8px;
 }
 
 #search-image {
@@ -182,6 +213,56 @@ nav li:nth-child(6) span:first-child {
   background-position: -70px -285px;
 }
 
+nav li:nth-child(7) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(9) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(10) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(11) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(12) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(13) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(14) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(15) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(16) span:first-child {
+  width: 32px;
+  background-position: -125px -130px;
+}
+
 .nav-divider{
   display: inline-block;
   margin: 18px 16px 0;
@@ -192,7 +273,7 @@ nav li:nth-child(6) span:first-child {
 
 #search-ranking {
   position: absolute;
-  top: 15px;
+  top: 13px;
   right: 0;
 }
 
@@ -200,4 +281,13 @@ nav li:nth-child(6) span:first-child {
   margin-top: -9px;
   color: #00ab33;
   font-size: 16px;
+}
+
+main{
+  background-color: #f2f4f7;
+  overflow: auto;
+}
+
+main h3:nth-of-type(2){
+  background-color: red;
 }
