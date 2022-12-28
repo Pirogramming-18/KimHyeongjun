@@ -1,6 +1,16 @@
 * {
   box-sizing: border-box;
 }
+/* 모든 position은 static이 기본값이다 */
+/* top right bottom left */
+/* span 은 inline이 기본값 */
+/* div 은 block이 기본값 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 /* selector */
 .blind {
@@ -46,14 +56,12 @@
 #header-search fieldset {
   margin-left: 20px;
   padding: 12px 0px 12px 10px;
-  /* top right bottom left */
   width: 586px;
   height: 56px;
   display: inline-block;
   border: 2px solid #03cf5d; /* hex */
   vertical-align: middle;
   position: relative;
-  /* 모든 position은 static이 기본값이다 */
 }
 
 #header-search fieldset input {
@@ -84,5 +92,9 @@
   background-repeat: no-repeat;
   background-size: 442px 428px;
   display: inline-block;
-  margin: 18px;
+  /* margin: 18px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
