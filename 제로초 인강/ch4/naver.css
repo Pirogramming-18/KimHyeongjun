@@ -5,6 +5,7 @@
 /* top right bottom left */
 /* span 은 inline이 기본값 */
 /* div 은 block이 기본값 */
+/* !important > inline style attribute > id > attribute > tag element */
 
 html,
 body {
@@ -114,11 +115,13 @@ nav li span:first-child {
   display: inline-block;
   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
   background-repeat: no-repeat;
+  margin-left: 14px;
 }
 
 nav li:first-child span:first-child {
   width: 25px;
   background-position: 0px -285px;
+  margin-left: 0;
 }
 
 nav li:nth-child(2) span:first-child {
