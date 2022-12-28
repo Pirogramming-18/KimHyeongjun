@@ -53,6 +53,7 @@
   border: 2px solid #03cf5d; /* hex */
   vertical-align: middle;
   position: relative;
+  /* 모든 position은 static이 기본값이다 */
 }
 
 #header-search fieldset input {
