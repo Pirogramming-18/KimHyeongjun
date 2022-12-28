@@ -30,6 +30,8 @@
   background-position: 0 -158px;
   background-repeat: no-repeat;
   vertical-align: middle;
+  position: relative;
+  top: -6px;
 }
 
 #header-search h1 span {
@@ -57,6 +59,9 @@
   border: none;
   padding: 0;
   outline: none;
+  vertical-align: top;
+  width: 444px;
+  height: 24px;
 }
 
 #header-search fieldset button {
@@ -65,6 +70,9 @@
   border: none;
   padding: 0;
   background: #03cf5d;
+  position: absolute;
+  right: -2px;
+  top: -2px;
 }
 
 #search-image {
