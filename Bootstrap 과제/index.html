@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+  </head>
+  <body>
+    <header class="fixed-top bg-dark">
+      <div class="d-flex">
+        <ul class="list-unstyled d-flex fs-6 m-3">
+          <li class="m-auto me-3"><a href="#first_container" class="text-white text-decoration-none">Pirogrammming</a></li>
+          <li class="text-primary me-3"> Son-Byeong-woo</li>
+          <li class="me-3"><a href="#second_container" class="text-white text-decoration-none">Intro</a></li>
+          <li class="me-3"><a href="#third_container" class="text-white-50 text-decoration-none">Highlights</a></li>
+          <li class="me-3"><a href="#img_container" class="text-white-50 text-decoration-none">Gallary</a></li>
+          <li><a href="#fourth_container" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+        <button type="button" class="btn text-success border-success d-flex position-absolute end-0 m-2"  data-bs-toggle="modal" data-bs-target="#modal2">About</button>
+      </div>
+    </header>
+    <div id="first_container"
+      class="position-relative w-100 vh-100 text-center d-flex align-items-center justify-content-center flex-column"
+    >
+      <h1 class="fs-1 fw-bold">Pirogramming18</h1>
+      <div class="fs-5 fw-bold">cheer up</div>
+      <div class="w-75 height-1 bg-opacity-25 bg-black mt-4"></div>
+      <a href="#second_container" class="text-decoration-none btn btn-primary mt-3">Get Started</a>
+      <div class="modal fade" id="modal2" tabindex="-2" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary text-light fw-bold">
+                <div class="modal-header d-inline-block text-center">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">피로그래밍 18기</h1>
+                </div>
+                <div class="modal-body m-3">
+                    <div class="fs-3">파이팅!</div>
+                    모두들 아르샤 하느라 수고많으셨습니다!<br>
+                    힘들더라도 계속해서 달려봐요!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-primary">Download</button>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="second_container"
+      class="position-relative w-100 vh-100 text-center d-flex align-items-center justify-content-center flex-column bg-secondary"
+    >
+      <h2 class="fs-1 fw-bold text-danger">Built On the Bootstrap Grid</h2>
+      <div class="text-white width530 mt-2">
+        Bootstrap's responsive grid comes in 4sizes or 'breakpoints': tiny(xs).
+        small(sm), medium(md) and large(lg). These 4 grid cities enables you
+        creat responsive layouts that behave accordingly on different sizes
+      </div>
+      <a href="#third_container" class="text-decoration-none btn btn-light fw-bold mt-4">Learn more</a>
+    </div>
+    <div id="third_container"
+      class="position-relative w-100 h-auto bg-secondary d-flex flex-column justify-content-center"
+    >
+      <h2 class="text-primary fs-1 mt-5 fw-bolder mt-10 align-self-center">
+        Flexible Layouts
+      </h2>
+      <div
+        class="w-75 height-1 bg-opacity-10 bg-light align-self-center"
+      ></div>
+      <div
+        class="d-flex flex-row justify-content-evenly margin130 text-center text-light"
+      >
+        <div class="layouts">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="150"
+            fill="white"
+            class="bi bi-display"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"
+            />
+          </svg>
+          <div class="fs-4 mt-3"><strong>Responsive</strong></div>
+          <div class="mt-2">Yore cite looks good everywhere</div>
+          <img id="img_container"
+            src="http://placekitten.com/300/200"
+            alt="cat_image"
+            class="d-block"
+          />
+          <img
+            src="http://placekitten.com/300/200"
+            alt="cat_image"
+            class="d-block"
+          />
+        </div>
+        <div class="layouts">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="150"
+            fill="white"
+            class="bi bi-patch-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+            />
+          </svg>
+          <div class="fs-4 mt-3"><strong>Cusomizable</strong></div>
+          <div class="mt-2">Easy to theme and customize with SASS</div>
+          <img
+            src="http://placekitten.com/300/200"
+            alt="cat_image"
+            class="d-block"
+          />
+          <img
+            src="http://placekitten.com/300/200"
+            alt="cat_image"
+            class="d-block"
+          />
+        </div>
+        <div class="layouts">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="150"
+            fill="white"
+            class="bi bi-star"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+            />
+          </svg>
+          <div class="fs-4 mt-3"><strong>Consistent</strong></div>
+          <div class="mt-2">A mature, well-tested, stable codebase</div>
+          <img
+            src="http://placekitten.com/300/200"
+            alt="cat_image"
+            class="d-block"
+          />
+          <img
+            src="http://placekitten.com/300/200"
+            alt="cat_image"
+            class="d-block"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="fourth_container"
+      class="fourth_container position-relative w-100 vh-75 text-center d-flex align-items-center justify-content-end flex-column bg-secondary"
+    >
+      <h2 class="text-primary fs-1 fw-bolder position-absolute">
+        Get in Touch
+      </h2>
+      <div
+        class="w-75 height-1 bg-opacity-10 bg-light mt-4 position-absolute"
+      ></div>
+      <div class="w-75">
+        <div class="d-flex">
+          <input
+            text="text"
+            class="me-3 mb-2 w-100 form-control"
+            placeholder="name"
+            aria-label="name"
+          />
+          <input
+            text="text"
+            class="me-3 mb-2 w-100 form-control"
+            placeholder="email"
+            aria-label="email"
+          />
+          <input
+            text="text"
+            class="mb-2 w-100 form-control"
+            placeholder="phone"
+            aria-label="phone"
+          />
+        </div>
+        <div>
+          <input
+            text="text"
+            class="w-100 form-control height-200"
+            placeholder="Your messages here"
+            aria-label="Your messages here"
+          />
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary mt-5 btn-width mb-5" data-bs-toggle="modal" data-bs-target="#modal1">Send</button>
+      <!-- Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-inline-block">
+                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Nice-job!</h1>
+                    </div>
+                    <div class="modal-body">You clicked the button but it doesn't<br>actually go anywhere
+                        <div class="text-secondary m-4">learn more at Bootstrap</div>
+                    </div>
+                    <div class="modal-footer d-inline-block">
+                        <button type="button" class="btn btn-primary w-100"  data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer
+      class="position-relative w-100 vh-25 text-center bg-dark text-light text-decoration-none d-flex justify-content-around p-5 fs-5"
+    >
+      <div>
+        <ul class="list-unstyled text-start">
+          <li class="text-info">Information</li>
+          <li>Product</li>
+          <li>Services</li>
+          <li>Benefit</li>
+          <li>Developer</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="list-unstyled text-start">
+          <li class="text-info">About</li>
+          <li>Contact us</li>
+          <li>Delivery Information</li>
+          <li>Privacy Policy</li>
+          <li>Trauma&Condition</li>
+        </ul>
+      </div>
+      <div class="text-start">
+        <div class="text-info">Stay Posted</div>
+        <input type="text" class="form-control width300 mt-3 mb-2"  placeholder="Tell me your email"
+        aria-label="Tell me your email"/>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Subscribe for updates</button>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
