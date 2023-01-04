@@ -21,6 +21,35 @@ function createHTMLString(item) {
     `;
 }
 
+function onButtonClick(event, items){
+    const datset = event.target.dataset;
+    const key = datset.key;
+    const value = datset.value;
+
+    if (key == null || value == null){
+        return;
+    }
+
+    updateItems(items, key, value);
+}
+
+function updateItems(items, key, value){
+  items.forEach(item => {
+    if(item.dataset[key] === value) {
+      item.classList.remove('invisible');
+    }else{
+      item.classList.add('invisible')
+    }
+  })
+}
+
+function setEventListensers(items){
+    const logo = document.querySelector('.logo');
+    const buttons = document.querySelector('.buttons');
+    logo.addEventListener('click', () => displayItems(items));
+    buttons.addEventListener('click', event => onButtonClick(event, items));
+}
+
 // main
 loadItems()
   .then((items) => {
