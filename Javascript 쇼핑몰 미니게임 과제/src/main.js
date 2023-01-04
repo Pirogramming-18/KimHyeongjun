@@ -38,7 +38,7 @@ function updateItems(items, key, value){
     if(item.dataset[key] === value) {
       item.classList.remove('invisible');
     }else{
-      item.classList.add('invisible')
+      item.classList.add('invisible');
     }
   })
 }
