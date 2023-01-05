@@ -11,8 +11,10 @@ const stopwatch = document.getElementById('stopwatch_time');
 const startBtn = document.querySelector('.start_button');
 const stopBtn = document.querySelector('.stop_button');
 const r_button = document.querySelector('.reset_button');
-const container = document.querySelector('.container');
-const recordList = document.querySelector('.recordList');
+const new_ = document.querySelector('.new');
+const delete_ = document.querySelector('.bi-trash-fill');
+
+
 
 startBtn.addEventListener('click', function() {
 	// RECORD
@@ -50,15 +52,18 @@ stopBtn.addEventListener('click', function() {
     if(timerStart) {
         clearInterval(timerStart);	// STOP
         endTime = Date.now();
-        console.log(min, sec, milisec);
-        let li = document.createElement('div');
+        console.log(sec, milisec);
         // li.style.color = "#fff";
-        li.innerText = sec + ' : ' + milisec;
-        if(! recordList.firstChild) {
-            recordList.append(li);
-        } else {
-            recordList.insertBefore(li, recordList.firstChild);
-        }
+        let time = sec + " : " + milisec;
+        let recordList = document.createElement('div');
+        recordList.innerHTML = `
+            <div class="recordList">
+                <input type='checkbox' name='tmpChkbox[]' class='check_box'>
+                <div id="testRecordList">${time}</div>
+                <div></div>
+            </div>
+        `;
+        new_.appendChild(recordList);
     }
 })
 
@@ -74,7 +79,24 @@ r_button.addEventListener('click', function() {
         timerStart = null;
         recordList.innerHTML = '';
     }
-})
+});
+
+function selectAll(selectAll)  {
+    const checkboxes 
+       = document.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = selectAll.checked
+    })
+  }
+
+$('.bi-trash-fill').click(function() {
+    $("input:checkbox[name='tmpChkbox[]']:checked").each(function(k, kVal){
+        console.log("kVal ::", kVal.parentElement.parentElement);
+        let a = kVal.parentElement.parentElement;
+        $(a).remove();
+    })
+});
  
 function addZero(num) {
     return (num < 10 ? '0'+num : ''+num);
