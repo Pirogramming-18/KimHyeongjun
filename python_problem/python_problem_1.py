@@ -3,7 +3,7 @@ num_sum = 0
 name = "player"
 a = True
 
-for i in range(2):
+while True:
     while True:
         number = input('부를 숫자의 개수를 입력하세요(1, 2, 3만 입력 가능) : ')
         if not number.isnumeric():
@@ -25,4 +25,8 @@ for i in range(2):
     while num < num_sum:
         num+=1
         print(name, ":",  num)
+        if num == 31:
+            break
+    if num == 31:
+        break
     
