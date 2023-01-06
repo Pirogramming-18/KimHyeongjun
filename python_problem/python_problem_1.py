@@ -1,8 +1,9 @@
+
+
 num = 0
 num_sum = 0
 name = "player"
 a = True
-
 while True:
     while True:
         number = input('부를 숫자의 개수를 입력하세요(1, 2, 3만 입력 가능) : ')
@@ -28,5 +29,11 @@ while True:
         if num == 31:
             break
     if num == 31:
+        if name == "playerB":
+            print('playerA win!')
+        else:
+            print('playerB win!')
         break
+
+
     
