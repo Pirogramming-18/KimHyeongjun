@@ -1,10 +1,19 @@
+import random
 
 def brGame():
     num = 0
     num_sum = 0
-    name = "player"
-    a = True
+
     while True:
+        com_number = random.randint(1, 3)
+        num_sum += com_number
+        while num < num_sum:
+            num+=1
+            print('computer', num)
+            if num == 31:
+                print('player win!')
+                return
+            
         while True:
             number = input('부를 숫자의 개수를 입력하세요(1, 2, 3만 입력 가능) : ')
             if not number.isnumeric():
@@ -14,26 +23,15 @@ def brGame():
             else:
                 print('1,2,3 중 하나를 입력하세요')
 
-        number = int(number)
-        num_sum += number
-        if a == True:
-            name = "playerA"
-            a = False
-        else:
-            name = "playerB"
-            a = True
+        num_sum += int(number)
 
         while num < num_sum:
             num+=1
-            print(name, ":",  num)
+            print("player", num)
             if num == 31:
-                break
-        if num == 31:
-            if name == "playerB":
-                print('playerA win!')
-            else:
-                print('playerB win!')
-            break
+                print('computer win!')
+                return
 
+brGame()
 
     
