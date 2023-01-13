@@ -1,0 +1,24 @@
+<h1>Movie review</h1>
+
+<form action="/posts/{{movie.id}}/update" method="post">
+    {% csrf_token %}
+    <input name="movie_title" placeholder="제목" value="{{movie.movie_title}}"/>
+    <br>
+    <input name="movie_created_at" placeholder="개봉년도" type="number" value="{{movie.movie_created_at}}"/>
+    <br>
+    <input name="movie_genre" placeholder="장르" value="{{movie.movie_genre}}"/>
+    <br>
+    <input name="rating" placeholder="별점(0.0~5.0)" value="{{movie.rating}}">
+    <br>
+    <input name="running_time" placeholder="러닝타임(분)" type="number" value="{{movie.running_time}}">
+    <br>
+    <textarea name="review_content" placeholder="리뷰">{{movie.review_content}}</textarea>
+    <br>
+    <input name="director" placeholder="감독" value="{{movie.director}}">
+    <br>
+    <input name="actor" placeholder="배우" value="{{movie.actor}}">
+    <br>
+    <div>
+        <input type="submit" placeholder="Save" />
+    </div>
+</form>
