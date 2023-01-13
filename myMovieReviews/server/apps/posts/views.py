@@ -39,7 +39,6 @@ def movie_update(request: HttpRequest, pk, *args, **kwargs):
         movie.movie_created_at=request.POST["movie_created_at"]
         movie.save()
         return redirect(f"/posts/{movie.id}")
-
     return render(request, "posts/movie_update.html", {"movie": movie})
 
 def movie_delete(request: HttpRequest, pk, *args, **kwargs):

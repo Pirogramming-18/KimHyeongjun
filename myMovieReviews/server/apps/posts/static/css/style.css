@@ -1,0 +1,157 @@
+.main_nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.main_nav>h1{
+    font-size: 26px;
+}
+
+.main_nav a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+.main_nav div{
+    margin-top: 30px;
+    padding-right: 70px;
+}
+.main_nav>h1>a>span{
+    color: #F92960;
+}
+
+.main_box_container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main_box_container>.main_box{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    margin:40px;
+    width:300px;
+    height: 400px;
+    background-color: #F2F2F2;
+}
+
+.main_box_container .main_box>p{
+    margin-top: 230px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main_box_container .main_box a{
+    color: #333;
+}
+
+.main_box_container .main_box small{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.main_box_container .main_box small>span{
+    color: #777;
+}
+
+.create_main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.create_main form{
+    width:900px;
+    background-color: #F2F2F2;
+}
+
+.create_main form>h1{
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.create_main form>h1>span{
+    color: #F92960;
+}
+
+.create_main form>hr{
+    border-color: rgb(220, 220, 220);
+    margin: 30px 100px;
+}
+
+.create_main form>div{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0 10px 100px;
+}
+
+.create_main form>div>textarea{
+    width:700px;
+    height:200px;
+}
+
+.create_main form>div:last-child{
+    text-align: right;
+    padding: 20px 100px 40px 0;
+}
+
+.retrieve_main_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.retrieve_main_title h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.retrieve_main_title>div{
+    display: flex;
+    margin:10px;
+}
+
+.retrieve_main_title>div>div{
+    margin-right:20px;
+    margin-top:3px;
+}
+
+.retrieve_main_title>div>div>a{
+    color: #333;
+}
+
+.retrieve_main_title>div>form{
+    border: none;
+}
+
+.retrieve_main_second{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.retrieve_main_second>div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.retrieve_main_second span{
+    color: #777;
+}
+.retrieve_main_second>div>small{
+    margin:10px;
+}
