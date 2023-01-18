@@ -1,0 +1,22 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+    <form action="/" method="get">
+        <input name="text" placeholder="검색하기"/>
+    </form>
+    {% for post in posts %}
+    <article>
+    {% if post.image %}
+    <p>
+        <img src="{{ post.image.url }}"/>
+    </p>
+    {% endif %}
+    <div>
+    <p><a href="{% url 'posts:retrieve' post.pk %}">{{post.title}}</a></p>
+    <small>{{post.devtool.name}}</small><br />
+    <small>{{post.interest}}</small>
+    </div>
+    </article>
+    <hr />
+    {% endfor %}
+{% endblock %}

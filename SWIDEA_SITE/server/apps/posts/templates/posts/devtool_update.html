@@ -1,0 +1,22 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+    <h2>DevTool Detail Update</h2>
+
+    <form
+      action="{% url 'posts:dTUpdate' devtool.pk %}"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+      <input name="name" placeholder="게시글 이름"  value="{{devtool.name}}" />
+      <br />
+      <input name="kind" placeholder="종류" value="{{devtool.kind}}" />
+      <br />
+      <textarea name="content" placeholder="게시글 내용">{{devtool.content}}</textarea>
+      <br />
+      <div>
+        <input type="submit" , value="SUBMIT" />
+      </div>
+    </form>
+{% endblock %}

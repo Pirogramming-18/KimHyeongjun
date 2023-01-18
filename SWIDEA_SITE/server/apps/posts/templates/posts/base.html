@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SW Idea Manage</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <a href="/">
+                    My <span>SW Idea</span> Manage
+                </a>
+            </div>
+            <div><a href="{% url 'posts:create' %}">아이디어 등록</a></div>
+            <div><a href="{% url 'posts:list' %}">아이디어 관리</a></div>
+            <div><a href="{% url 'posts:dTCreate' %}">개발툴 등록</a></div>
+            <div><a href="{% url 'posts:dTList' %}">개발툴 관리</a></div>
+        </div>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

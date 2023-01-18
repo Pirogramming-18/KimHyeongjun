@@ -1,0 +1,14 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+    {% for devtool in devtools %}
+    <article>
+    <div>
+    <p><a href="{% url 'posts:dTRetrieve' devtool.pk %}">{{devtool.name}}</a></p>
+    <small>{{devtool.kind}}</small><br />
+    <small>{{devtol.content}}</small>
+    </div>
+    </article>
+    <hr />
+    {% endfor %}
+{% endblock %}

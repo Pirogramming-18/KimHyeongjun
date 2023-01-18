@@ -1,0 +1,30 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+    <h2>Idea Register</h2>
+
+    <form
+      action="{% url 'posts:create' %}"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+      <input name="title" placeholder="게시글 제목" />
+      <br />
+      <input type="file" name="image" />
+      <br>
+      <textarea name="content" placeholder="게시글 내용"></textarea>
+      <br />
+      <input name="interest" placeholder="관심도" />
+      <br />
+      <select name="devtool">
+        {% for devtool in devtools %}
+            <option value="{{devtool.id}}">{{devtool.name}}</option>
+        {% endfor %}
+      </select>
+      <br />
+      <div>
+        <input type="submit" , value="SUBMIT" />
+      </div>
+    </form>
+{% endblock %}

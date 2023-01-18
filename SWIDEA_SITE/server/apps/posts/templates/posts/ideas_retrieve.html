@@ -1,0 +1,22 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+    <p><img src="{{ post.image.url }}"/></p>
+    <h2>{{post.title}}</h1>
+    <small>1) 아이디어 관심도:{{post.interest}}</small><br />
+    <small><a href="{% url 'posts:dTRetrieve' post.devtool.id %}">{{post.devtool.name}}</a></small>
+    <small>2) 예상 개발 툴:{{devtool_name}}</small><br />
+    <small>3) 아이디어 설명:{{post.content}}</small><br />
+    <br />
+    <hr />
+    <div>
+      <a href="{% url 'posts:update' post.pk %}">수정하기</a>
+    </div>
+    <div>
+      <a href="{% url 'posts:list' %}">목록</a>
+    </div>
+    <form action="{% url 'posts:delete' post.pk %}" method="post">
+      {% csrf_token %}
+      <input type="submit" , value="삭제하기" />
+    </form>
+{% endblock %}
